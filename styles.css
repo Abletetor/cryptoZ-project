@@ -261,15 +261,15 @@ header .navbar {
 .currency-img .cam2 {
      position: absolute;
      top: 11rem;
-     right: 13rem;
+     right: 11rem;
      z-index: 0;
      height: 10rem;
 }
 
 .currency-img .cam1 {
      position: absolute;
-     top: 84%;
-     right: 42%;
+     top: 87%;
+     right: 41%;
      z-index: 2;
      height: 10rem;
 }
