@@ -268,8 +268,8 @@ header .navbar {
 
 .currency-img .cam1 {
      position: absolute;
-     top: 87%;
-     right: 41%;
+     top: 91%;
+     right: 43%;
      z-index: 2;
      height: 10rem;
 }
@@ -448,7 +448,7 @@ h3 {
 
 .portfolio .desc h3 {
      color: #fff;
-     font-size: 35px;
+     font-size: 30px;
      font-family: "Yukita Sans";
      font-weight: 700;
      line-height: 40px;
@@ -492,7 +492,7 @@ h3 {
 
 .box1 .desc h3 {
      height: 88px;
-     font-size: 22px;
+     font-size: 20px;
      font-weight: 700;
      font-family: "Yukita Sans";
      color: #050E2C;
@@ -503,7 +503,7 @@ h3 {
      font-weight: 400;
      color: #050E2CB2;
      margin-top: 1rem;
-     margin-right: 2.5rem;
+     margin-right: 1rem;
 }
 
 .security .desc h3,
