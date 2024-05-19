@@ -145,18 +145,18 @@ header .navbar {
 
 .hero-text h2 {
      font-family: "Yukita Sans";
-     font-size: 38px;
+     font-size: 42px;
      font-weight: 700;
      padding-bottom: 20px;
      line-height: 50px;
-     max-width: 618px;
+     max-width: 518px;
 }
 
 .hero-text p {
      font-size: 15px;
      line-height: 28px;
      padding-bottom: 20px;
-     max-width: 604px;
+     max-width: 504px;
 }
 
 .box-container .address input {
@@ -261,7 +261,7 @@ header .navbar {
 .currency-img .cam2 {
      position: absolute;
      top: 11rem;
-     right: 13rem;
+     right: 17rem;
      z-index: 0;
      height: 10rem;
 }
@@ -269,7 +269,7 @@ header .navbar {
 .currency-img .cam1 {
      position: absolute;
      top: 80%;
-     right: 40%;
+     right: 44%;
      z-index: 2;
      height: 10rem;
 }
