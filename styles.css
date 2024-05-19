@@ -27,6 +27,11 @@
      list-style: none;
 }
 
+body {
+     width: 100%;
+     height: 100vh;
+}
+
 html {
      font-size: 62.5%;
      scroll-behavior: smooth;
@@ -123,11 +128,12 @@ header .navbar {
 /* hero section start  */
 .hero {
      background: linear-gradient(to right, #2752E7, #0B2271);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
-     max-width: 100%;
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
 }
 
 .hero .box-container {
@@ -137,6 +143,10 @@ header .navbar {
      flex-wrap: wrap;
      color: var(--white);
      margin: 10rem 1rem 2rem 0;
+     width: 100%;
+     max-width: 1200px;
+     padding: 20px;
+     /* text-align: center; */
 }
 
 .box-container .hero-text {
@@ -516,7 +526,7 @@ h3 {
 /* get started  */
 .get-started {
      background-color: #D0DBFF;
-     width: 100%;
+     max-width: 1440px;
 }
 
 .get-started h2 {
@@ -795,9 +805,12 @@ h3 {
           font-size: 55%;
      }
 
-     header,
-     section {
+     header{
           padding: 2rem;
+     }
+
+     section {
+          padding: 2rem 3%;
      }
 
      .navbar-btn {
