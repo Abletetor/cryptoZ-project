@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CryptoZ</title>
+     <!-- local css file  -->
+     <link rel="stylesheet" href="CSS/styles.css">
+
+     <!-- google fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+     <!-- google font icon -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+     <!-- header section starts  -->
+     <header>
+          <nav class="navbar">
+
+               <div class="logo">
+                    <img src="images/letter-z.png" alt="">Crypto<span>Z</span>
+               </div>
+               <span class="material-icons menu" id="menu">menu</span>
+
+               <div class="navbar-links" id="navbar-links">
+                    <ul>
+                         <li><a href="#product">Product</a></li>
+                         <li><a href="#price">Price</a></li>
+                         <li><a href="#learn">Learn</a></li>
+                         <li><a href="#support">Support</a></li>
+                    </ul>
+               </div>
+
+               <div class="navbar-btn" id="navbar-btn">
+                    <a href="#" class="btnSign">Signin</a>
+                    <a href="#" class="btnStart">Get Started</a>
+               </div>
+          </nav>
+
+     </header>
+     <!-- header section ends  -->
+
+     <!-- hero section starts  -->
+     <section class="hero">
+          <div class="box-container">
+               <div class="hero-text">
+                    <h2>
+                         Your all-in-one platform to buy, sell, trade, and earn Cryptocurrencies
+                    </h2>
+                    <p>
+                         Open a free account in minutes right form your phone and make your money go further
+                    </p>
+                    <div class="address">
+                         <input type="email" name="email" id="email" placeholder="Email Address...">
+                         <a href="#" class="btnStart">Get Started</a>
+                    </div>
+               </div>
+
+
+               <div class="currency-converter">
+                    <h1>Currency Converter</h1>
+                    <p>Amount</p>
+                    <div class="currency">
+                         <img src="https://flagcdn.com/48x36/us.png" srcset="https://flagcdn.com/48x36/ua.png 2x,
+                        https://flagcdn.com/48x36/ua.png 3x" width="33" height="33" alt="US" id="flag-one">
+                         <select id="currency-one">
+                              <option value="GHS">GHS</option>
+                              <option value="AED">AED</option>
+                              <option value="ARS">ARS</option>
+                              <option value="AUD">AUD</option>
+                              <option value="BGN">BGN</option>
+                              <option value="BRL">BRL</option>
+                              <option value="BSD">BSD</option>
+                              <option value="CAD">CAD</option>
+                              <option value="CHF">CHF</option>
+                              <option value="CLP">CLP</option>
+                              <option value="CNY">CNY</option>
+                              <option value="COP">COP</option>
+                              <option value="CZK">CZK</option>
+                              <option value="DKK">DKK</option>
+                              <option value="DOP">DOP</option>
+                              <option value="EGP">EGP</option>
+                              <option value="EUR">EUR</option>
+                              <option value="FJD">FJD</option>
+                              <option value="GBP">GBP</option>
+                              <option value="GTQ">GTQ</option>
+                              <option value="HKD">HKD</option>
+                              <option value="HRK">HRK</option>
+                              <option value="HUF">HUF</option>
+                              <option value="IDR">IDR</option>
+                              <option value="ILS">ILS</option>
+                              <option value="INR">INR</option>
+                              <option value="ISK">ISK</option>
+                              <option value="JPY">JPY</option>
+                              <option value="KRW">KRW</option>
+                              <option value="KZT">KZT</option>
+                              <option value="MXN">MXN</option>
+                              <option value="MYR">MYR</option>
+                              <option value="NOK">NOK</option>
+                              <option value="NZD">NZD</option>
+                              <option value="PAB">PAB</option>
+                              <option value="PEN">PEN</option>
+                              <option value="PHP">PHP</option>
+                              <option value="PKR">PKR</option>
+                              <option value="PLN">PLN</option>
+                              <option value="PYG">PYG</option>
+                              <option value="RON">RON</option>
+                              <option value="RUB">RUB</option>
+                              <option value="SAR">SAR</option>
+                              <option value="SEK">SEK</option>
+                              <option value="SGD">SGD</option>
+                              <option value="THB">THB</option>
+                              <option value="TRY">TRY</option>
+                              <option value="TWD">TWD</option>
+                              <option value="UAH">UAH</option>
+                              <option value="USD" selected>USD</option>
+                              <option value="UYU">UYU</option>
+                              <option value="VND">VND</option>
+                              <option value="ZAR">ZAR</option>
+                         </select>
+                         <input type="text" id="amount-one" placeholder="0.00" min="0.00" />
+                    </div>
+
+                    <p>Convert To</p>
+                    <div class="currency">
+                         <img src="https://flagcdn.com/48x36/gh.png" srcset="https://flagcdn.com/48x36/ua.png 2x,
+                                       https://flagcdn.com/48x36/ua.png 3x" width="33" height="33" alt="Ukraine"
+                              id="flag-two">
+                         <select id="currency-two">
+                              <option value="GHS" selected>GHS</option>
+                              <option value="AED">AED</option>
+                              <option value="ARS">ARS</option>
+                              <option value="AUD">AUD</option>
+                              <option value="BGN">BGN</option>
+                              <option value="BRL">BRL</option>
+                              <option value="BSD">BSD</option>
+                              <option value="CAD">CAD</option>
+                              <option value="CHF">CHF</option>
+                              <option value="CLP">CLP</option>
+                              <option value="CNY">CNY</option>
+                              <option value="COP">COP</option>
+                              <option value="CZK">CZK</option>
+                              <option value="DKK">DKK</option>
+                              <option value="DOP">DOP</option>
+                              <option value="EGP">EGP</option>
+                              <option value="EUR">EUR</option>
+                              <option value="FJD">FJD</option>
+                              <option value="GBP">GBP</option>
+                              <option value="GTQ">GTQ</option>
+                              <option value="HKD">HKD</option>
+                              <option value="HRK">HRK</option>
+                              <option value="HUF">HUF</option>
+                              <option value="IDR">IDR</option>
+                              <option value="ILS">ILS</option>
+                              <option value="INR">INR</option>
+                              <option value="ISK">ISK</option>
+                              <option value="JPY">JPY</option>
+                              <option value="KRW">KRW</option>
+                              <option value="KZT">KZT</option>
+                              <option value="MXN">MXN</option>
+                              <option value="MYR">MYR</option>
+                              <option value="NOK">NOK</option>
+                              <option value="NZD">NZD</option>
+                              <option value="PAB">PAB</option>
+                              <option value="PEN">PEN</option>
+                              <option value="PHP">PHP</option>
+                              <option value="PKR">PKR</option>
+                              <option value="PLN">PLN</option>
+                              <option value="PYG">PYG</option>
+                              <option value="RON">RON</option>
+                              <option value="RUB">RUB</option>
+                              <option value="SAR">SAR</option>
+                              <option value="SEK">SEK</option>
+                              <option value="SGD">SGD</option>
+                              <option value="THB">THB</option>
+                              <option value="TRY">TRY</option>
+                              <option value="TWD">TWD</option>
+                              <option value="UAH">UAH</option>
+                              <option value="USD">USD</option>
+                              <option value="UYU">UYU</option>
+                              <option value="VND">VND</option>
+                              <option value="ZAR">ZAR</option>
+                         </select>
+                         <input type="text" id="amount-two" />
+                    </div>
+                    <div class="date" id="date">
+                         <p>Date</p>
+                         <input type="date" name="" id="">
+                    </div>
+                    <p class="currencyText">EUR GBP BTC</p>
+               </div>
+
+               <div class="currency-img">
+                    <img src="images/Coin/Ethereum/Cam1.png" alt="Coin" class="cam1">
+                    <img src="images/Coin/BitCoin/Cam2.png" alt="Coin" class="cam2">
+               </div>
+
+          </div>
+     </section>
+     <!-- hero section ends  -->
+
+     <!-- company brand section starts -->
+     <section class="brands">
+
+          <div class="box">
+               <img src="images/Binance.svg" alt="binance">
+               <img src="images/coinbase.png" alt="coinbase">
+               <img src="images/bitcoin-logo.png" alt="bitcoin-logo">
+               <img src="images/tether-logo.png" alt="tether-logo">
+               <img src="images/Bitmex-Logo.png" alt="Bitmex-Logo">
+          </div>
+          <!-- company brands section ends   -->
+     </section>
+
+     <!-- stats section starts   -->
+     <section class="stats">
+          <div class="stat-container">
+
+               <div class="stat-box">
+                    <h3>99K</h3>
+                    <p>People have joined</p>
+               </div>
+               <div class="vertical-line"></div>
+               <div class="stat-box">
+                    <h3>50K</h3>
+                    <p>VVIP users have joined</p>
+               </div>
+               <div class="vertical-line"></div>
+               <div class="stat-box">
+                    <h3>100+</h3>
+                    <p>Big Companies joined</p>
+               </div>
+
+          </div>
+     </section>
+     <!-- stats section ends   -->
+
+     <!-- Benefit section start -->
+     <section class="benefit">
+
+          <div class="benefit-container">
+               <div class="reasons">
+                    <h2>
+                         The Most Trusted Cryptocurrency Platform
+                    </h2>
+                    <div class="reason-1">
+                         <span>01</span>
+                         <h3>Sync between platforms</h3>
+                         <p>
+                              No matter if you're using our web interface or mobile app- your data is always synced.
+                              Just one account for all our services.
+                         </p>
+                    </div>
+                    <div class="horizontal-line"></div>
+
+                    <div class="reason-2">
+                         <span>02</span>
+                         <h3>More focus, less clutter</h3>
+                         <p>
+                              No ads, just crypto and content you love.
+                         </p>
+                    </div>
+                    <div class="horizontal-line"></div>
+
+                    <div class="reason-3">
+                         <span>03</span>
+                         <h3>Security by default</h3>
+                         <p>
+                              Enable privacy mode and app locking to protect your data.
+                         </p>
+                    </div>
+               </div>
+
+               <div class="mobile-interface-image">
+                    <img src="images/mobile-interface.png" alt="mobile-image">
+               </div>
+          </div>
+
+     </section>
+     <!-- benefit section  ends-->
+
+     <!-- features section starts  -->
+     <section class="features">
+
+          <div class="portfolio">
+               <div class="image">
+                    <img src="images/potfolio-img.png" alt="portfolio">
+               </div>
+               <div class="desc">
+                    <h3>Create portfolio today</h3>
+                    <p>
+                         Buy and sell popular digital currencies, keep track of them in the one place. Has
+                         variety of features that make it the best place to start trading.
+                    </p>
+               </div>
+          </div>
+
+
+          <div class="fast box1">
+               <div class="image">
+                    <img src="images/fast-img.png" alt="fast">
+               </div>
+               <div class="desc">
+                    <h3>
+                         Lightening-Fast Crypto Trading
+                    </h3>
+                    <p>
+                         The Exchange supports USD, EUR, and GBP. Invest in Cryptocurrency slowly over time by
+                         scheduling buys daily, weekly, or monthly.
+                    </p>
+               </div>
+          </div>
+
+          <div class="security box1">
+               <div class="image">
+                    <img src="images/Group 8747.png" alt="security">
+               </div>
+               <div class="desc">
+                    <h3>Security From Day One</h3>
+                    <p>
+                         Safety, security and complaince. Buy and sell popular digital currencies, keep
+                         track of them in one place.
+                    </p>
+               </div>
+          </div>
+     </section>
+
+     <!-- features section ends  -->
+
+     <!-- get started section starts  -->
+     <section class="get-started">
+
+          <h2>Get Started in Just</h2>
+          <h2>Few Minute</h2>
+          <p>Has variety of features that make it best place to start trading</p>
+
+
+          <div class="actions">
+               <div class="card">
+                    <div class="image">
+                         <img src="images/Frame 219.png" alt="signup-img">
+                    </div>
+                    <div class="desc">
+                         <h3>Sign Up</h3>
+                         <p>
+                              Buy Bitcoin or Ethereum, then secuely store it in your wallet or send it on easily to
+                              friends.
+                         </p>
+                    </div>
+               </div>
+
+               <div class="card">
+                    <div class="image">
+                         <img src="images/Frame 220.png" alt="signup-img">
+                    </div>
+                    <div class="desc">
+                         <h3>Fund</h3>
+                         <p>
+                              Choose your prefered payment method such as bank transfer or credit card to top up
+                              your wallet.
+                         </p>
+                    </div>
+               </div>
+
+               <div class="card">
+                    <div class="image">
+                         <img src="images/Frame 221.png" alt="signup-img">
+                    </div>
+                    <div class="desc">
+                         <h3>Buy Crypto</h3>
+                         <p>
+                              Sign up for free wallet on web, IOS or andriod and follow our easy process to set up
+                              your profile.
+                         </p>
+                    </div>
+               </div>
+          </div>
+          </div>
+     </section>
+
+     <!-- get started section ends -->
+
+
+     <!-- testimonial section starts  -->
+     <section>
+          <div id="testimonial">
+               <h2>What people are saying</h2>
+
+               <div class="testimonial-card">
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT </span>
+                              </div>
+                         </div>
+                         <p>
+                              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla tempore earum non
+                              molestias nisi sunt! Veritatis sed officiis at!"
+                         </p>
+                    </div>
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT </span>
+                              </div>
+                         </div>
+                         <p>
+                              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla tempore earum non
+                              molestias nisi sunt! Veritatis sed officiis at!"
+                         </p>
+                    </div>
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT </span>
+                              </div>
+                         </div>
+                         <p>
+                              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur nostrum sapiente,
+                              repellat laboriosam corporis vitae ipsa excepturi. Eveniet, sapiente sint."
+                         </p>
+                    </div>
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT </span>
+                              </div>
+                         </div>
+                         <p>
+                              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla tempore earum non
+                              molestias nisi sunt!
+                              Veritatis sed officiis at!"
+                         </p>
+                    </div>
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT </span>
+                              </div>
+                         </div>
+                         <p>
+                              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla tempore earum non
+                              molestias nisi sunt!
+                              Veritatis sed officiis at!"
+                         </p>
+                    </div>
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT </span>
+                              </div>
+                         </div>
+                         <p>
+                              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla tempore earum non
+                              molestias nisi sunt!
+                              Veritatis sed officiis at!"
+                         </p>
+                    </div>
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT </span>
+                              </div>
+                         </div>
+                         <p>
+                              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla tempore earum non
+                              molestias nisi sunt! Veritatis sed officiis at!"
+                         </p>
+                    </div>
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT </span>
+                              </div>
+                         </div>
+                         <p>
+                              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla tempore earum non
+                              molestias nisi sunt! Veritatis sed officiis at!"
+                         </p>
+                    </div>
+
+                    <div class="card">
+                         <div class="user">
+                              <img src="images/testimonia.jpg" alt="testimonial-img">
+                              <div class="user-info">
+                                   <h3>Lonard Busia</h3>
+                                   <span>CEO Kings App CloseT</span>
+                              </div>
+                         </div>
+                         <p>
+                              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempore doloribus quis
+                              officiis suscipit. Dolore iure, laborum nihil repellat possimus natus nobis sint at id
+                              aperiam, aspernatur vitae sapiente amet!"
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- testimonial section ends  -->
+
+
+     <!-- first-step-banner section starts  -->
+     <div class="first-step-banner">
+          <div class="bannerText">
+               <p>Take your first step into safe, secure crypto investing</p>
+               <a href="#">Get Started</a>
+               <img src="images/btc.png" alt="Bitcoin-img" class="front-image">
+          </div>
+          <div class="banner-images">
+               <img src="images/eth.png" alt="Ethereum-img" class="middle-image">
+               <img src="images/luna.png" alt="Luna-img" class="back-image">
+          </div>
+     </div>
+     <!-- first-step-banner section ends  -->
+
+     <!-- footer section starts -->
+     <footer class="footer">
+          <div class="footer-container">
+
+               <div class="footer-links">
+                    <h3>Company</h3>
+                    <a href="#about-us">About Us</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#careers">Careers</a>
+                    <a href="#student">Student</a>
+                    <a href="#security">Security</a>
+                    <a href="#trust-safety">Trust And Safety</a>
+                    <a href="#newsroom">Newsroom</a>
+                    <a href="#video">Videos</a>
+               </div>
+
+               <div class="footer-links">
+                    <h3>Learn</h3>
+                    <a href="#trending">What is Trending</a>
+                    <a href="#product-news">Product News</a>
+                    <a href="#events">Events</a>
+                    <a href="#university">University</a>
+                    <a href="#research">Research</a>
+                    <a href="#market-updates">Market Updates</a>
+               </div>
+
+               <div class="footer-links">
+                    <h3>Products</h3>
+                    <a href="#stock&funds">Stock & Funds</a>
+                    <a href="#cash-card">Cash Card</a>
+                    <a href="#crypto">Crypto</a>
+                    <a href="#options">Options</a>
+                    <a href="#gold">Gold</a>
+                    <a href="#learn-snacks">Learn Snacks</a>
+               </div>
+
+               <div class="footer-links">
+                    <h3>Support</h3>
+                    <a href="#support-center">Support Center</a>
+                    <a href="#contact-us">Contact Us</a>
+                    <a href="#system">System Status</a>
+                    <a href="#areas-of-availability">Areas of Availability</a>
+               </div>
+
+               <div class="footer-links">
+                    <h3>Resources</h3>
+                    <a href="#prices">Prices</a>
+                    <a href="#sites-widgets">Sites Widgets</a>
+                    <a href="#tax">Tax</a>
+                    <a href="#support">Support</a>
+               </div>
+          </div>
+
+          <div class="bottom-line"></div>
+          <div class="bottom-text">
+               <p class="text">
+                    Did you know you can do more with crypto while on the go
+               </p>
+               <div class="logo">
+                    <img src="images/letter-z.png" alt="logo">
+                    <h3>CryptoZ</h3>
+               </div>
+
+               <p class="owner">&copy; 2024. Designed by <span>iametor.</span> All rights reserved.</p>
+          </div>
+     </footer>
+     <!-- footer section ends -->
+
+     <!-- local js file -->
+     <script src="JS/currency-flags.js"></script>
+     <script src="JS/main.js"></script>
+</body>
+
+</html>
