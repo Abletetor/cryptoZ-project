@@ -121,6 +121,7 @@ header .navbar {
      display: none;
      cursor: pointer;
 }
+
 /* header section ends  */
 
 /* hero section start  */
@@ -1013,7 +1014,7 @@ h3 {
      }
 
      .testimonial-card .card {
-          flex: 1 1 20rem;
+          flex: 1 1 25rem;
      }
 
      /* first-step-banner */
@@ -1032,8 +1033,8 @@ h3 {
      }
 
      .first-step-banner .bannerText a {
-          padding: 15px 8rem;
-          margin: auto 2rem;
+          padding: 15px 9rem;
+          margin-left: 7rem;
           width: 100%;
      }
 
@@ -1052,8 +1053,15 @@ h3 {
           padding: 10px;
      }
 
+     .hero-text h2,
+     .get-started h2,
+     .get-started .first,
+     #testimonial h2 {
+          font-size: 30px;
+     }
+
      .currency input {
-          text-align: left;
+          text-align: center;
      }
 
      .features {
