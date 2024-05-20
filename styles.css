@@ -526,7 +526,7 @@ h3 {
 /* get started  */
 .get-started {
      background-color: #D0DBFF;
-     max-width: 1440px;
+     /* max-width: 1440px; */
 }
 
 .get-started h2 {
@@ -548,7 +548,7 @@ h3 {
      justify-content: center;
      flex-wrap: wrap;
      gap: 1.5rem;
-     margin: 4rem;
+     /* margin: 4rem; */
 }
 
 .actions .card {
@@ -805,12 +805,12 @@ h3 {
           font-size: 55%;
      }
 
-     header{
+     header {
           padding: 2rem;
      }
 
      section {
-          padding: 2rem 3%;
+          padding: 2rem;
      }
 
      .navbar-btn {
@@ -970,6 +970,7 @@ h3 {
      .features {
           grid-template-columns: 1fr;
           grid-template-rows: auto;
+          margin: auto;
           height: auto;
           object-fit: cover;
      }
@@ -1032,11 +1033,19 @@ h3 {
      }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
+     html {
+          font-size: 50%;
+     }
 
-     .features,
-     .get-started {
-          width: 100%;
+     .hero {
+          min-height: 60vh;
+          padding: 0;
+     }
+
+     .hero .box-container {
+          max-width: 100%;
+          padding: 10px;
      }
 
      .currency input {
