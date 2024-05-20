@@ -721,7 +721,6 @@ h3 {
 
 /* footer styles starts  */
 .footer {
-     /* max-width: 1233px; */
      border-radius: 19.36px;
      background-color: #2752E7;
      margin: 8rem 13rem;
@@ -1093,5 +1092,13 @@ h3 {
      .first-step-banner .bannerText a {
           width: 50%;
           margin: auto;
+     }
+
+     .bottom-text .text {
+          font-size: 15px;
+     }
+
+     .bottom-text .owner {
+          font-size: 12px;
      }
 }
