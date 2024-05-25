@@ -8,8 +8,6 @@ menuBtn.addEventListener("click", function () {
      navbarBtn.classList.toggle("active");
 });
 
-//make sure the DOM is fulled loaded before JS code runs
-
 
 //select elements from html
 const flagOne = document.getElementById('flag-one');
@@ -19,26 +17,81 @@ const currencyTwo = document.getElementById('currency-two');
 const amountOne = document.getElementById('amount-one');
 const amountTwo = document.getElementById('amount-two');
 
-// function to update flag for currency selected
+//set country flag to empty array and populate it by API 
+let currencyToFlag = {};
+
+// Function to fetch currency codes and country data
+const fetchCurrenciesAndFlags = async () => {
+     try {
+          // currencies API call
+          const currencyResponse = await fetch('https://v6.exchangerate-api.com/v6/a51f48ffd6463910c59ba035/codes');
+          const currencyData = await currencyResponse.json();
+
+          // country currencies flag API call
+          const countryResponse = await fetch('https://restcountries.com/v3.1/all');
+          const countryData = await countryResponse.json();
+
+          countryData.forEach(country => {
+               const currencies = country.currencies;
+               for (const code in currencies) {
+                    if (currencies.hasOwnProperty(code)) {
+                         // Manual override for common currencies
+                         if (code === 'USD') {
+                              currencyToFlag[code] = 'https://flagcdn.com/w320/us.png'; 
+                         } else {
+                              currencyToFlag[code] = country.flags.png;
+                         }
+                    }
+               }
+          });
+
+          console.log(currencyToFlag); // Inspect the mapping
+          populateCurrencyOptions(currencyData.supported_codes);
+     } catch (error) {
+          console.error('Error fetching currency or country data:', error);
+     }
+};
+
+// Function to populate currency select options
+const populateCurrencyOptions = (currencies) => {
+     currencies.forEach(currency => {
+          const optionOne = document.createElement('option');
+          const optionTwo = document.createElement('option');
+          optionOne.value = currency[0];
+          optionOne.textContent = currency[0];
+          optionTwo.value = currency[0];
+          optionTwo.textContent = currency[0];
+
+          currencyOne.appendChild(optionOne);
+          currencyTwo.appendChild(optionTwo);
+     });
+
+     updateFlag(currencyOne, flagOne);
+     updateFlag(currencyTwo, flagTwo);
+     calculateAndUpdate();
+};
+
+// Function to update flag for selected currency
 const updateFlag = (selectElement, flagElement) => {
      const currencyCode = selectElement.value;
-     flagElement.src = `https://flagcdn.com/48x36/${currencyToFlag[currencyCode]}`;
+     flagElement.src = currencyToFlag[currencyCode];
      flagElement.alt = currencyCode;
 };
 
-
-// function to calculare and update currency conversion
-const calculateAndUpdate = () => {
+// Function to calculate and update currency conversion
+const calculateAndUpdate = async () => {
      const currency_1 = currencyOne.value;
      const currency_2 = currencyTwo.value;
      const apiURL = `https://v6.exchangerate-api.com/v6/a51f48ffd6463910c59ba035/latest/${currency_1}`;
 
-     fetch(apiURL)
-          .then(response => response.json())
-          .then(data => {
-               const conversionRate = data.conversion_rates[currency_2];
-               amountTwo.value = (amountOne.value * conversionRate).toFixed(2);
-          });
+     try {
+          const response = await fetch(apiURL);
+          const data = await response.json();
+          const conversionRate = data.conversion_rates[currency_2];
+          amountTwo.value = (amountOne.value * conversionRate).toFixed(2);
+     } catch (error) {
+          console.error('Error fetching exchange rates:', error);
+     }
 };
 
 // Event listeners for currency and amount changes
@@ -56,7 +109,4 @@ amountOne.addEventListener('input', calculateAndUpdate);
 amountTwo.addEventListener('input', calculateAndUpdate);
 
 // Initial setup on page load
-updateFlag(currencyOne, flagOne);
-updateFlag(currencyTwo, flagTwo);
-calculateAndUpdate();
-
+document.addEventListener('DOMContentLoaded', fetchCurrenciesAndFlags);

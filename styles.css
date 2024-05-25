@@ -71,6 +71,10 @@ header .navbar {
      justify-content: center;
 }
 
+.logo img {
+     padding-right: 15px;
+}
+
 .navbar .logo span {
      color: var(--skyblue);
      font-size: 20px;
@@ -142,35 +146,35 @@ header .navbar {
      justify-content: space-between;
      flex-wrap: wrap;
      color: var(--white);
-     margin: 8rem 1rem 2rem 0;
+     margin: 5rem 0 2rem 0;
      width: 100%;
-     max-width: 1200px;
+     max-width: 100%;
      padding: 20px;
 }
 
 .box-container .hero-text {
-     margin: 10px 10px 30px 0;
+     margin: 10px 5px 30px 0;
 }
 
 .hero-text h2 {
      font-family: "Yukita Sans";
-     font-size: 42px;
+     font-size: 40px;
      font-weight: 700;
      padding-bottom: 20px;
      line-height: 50px;
-     max-width: 518px;
+     max-width: 515px;
 }
 
 .hero-text p {
      font-size: 15px;
      line-height: 28px;
      padding-bottom: 20px;
-     max-width: 504px;
+     max-width: 470px;
 }
 
 .box-container .address input {
      font-size: 16px;
-     width: 350px;
+     width: 330px;
      height: 50px;
      border-radius: 10px;
      padding: 10px 20px;
@@ -183,7 +187,7 @@ header .navbar {
      border-radius: 10px;
      padding: 15px 20px;
      font-size: 16px;
-     margin: 10px;
+     margin: 5px;
 }
 
 .box-container .address a:hover {
@@ -191,8 +195,8 @@ header .navbar {
 }
 
 .box-container .currency-converter {
-     max-width: 491px;
-     max-height: 491px;
+     max-width: 400px;
+     max-height: 400px;
      border-radius: 20px;
      background-color: #FFFFFF33;
      padding: 30px;
@@ -231,7 +235,6 @@ header .navbar {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     /* border: 2px solid #dedede; */
      border-radius: 20px;
      background-color: #fff;
 }
@@ -239,6 +242,9 @@ header .navbar {
 .currency img {
      border-radius: 50%;
      object-fit: cover;
+     margin-left: 8px;
+     width: 30px;
+     height: 30px;
 }
 
 .currency select {
@@ -269,14 +275,14 @@ header .navbar {
 .currency-img .cam2 {
      position: absolute;
      top: 11rem;
-     right: 11rem;
+     right: 8rem;
      z-index: 0;
      height: 10rem;
 }
 
 .currency-img .cam1 {
      position: absolute;
-     top: 77%;
+     top: 79%;
      right: 43%;
      z-index: 2;
      height: 10rem;
@@ -415,7 +421,7 @@ h3 {
 
 .benefit .mobile-interface-image {
      background-color: #E8FAFE;
-     padding: 2rem 3rem 0 3rem;
+     padding: 2rem 2rem 0 3rem;
      z-index: -1;
 }
 
@@ -425,9 +431,9 @@ h3 {
      overflow: hidden;
 }
 
-/* trusted platform reasons  */
+/* benefits ends */
 
-/* features */
+/* features  start here*/
 .features {
      background-color: #D0DBFF;
      display: grid;
@@ -448,7 +454,7 @@ h3 {
 .portfolio .image img {
      background-color: #F3F3F3;
      border-radius: 20px;
-     margin: 3rem 0 2rem 5rem;
+     /* margin: 3rem 0 2rem 5rem; */
 }
 
 .portfolio .desc {
@@ -461,6 +467,7 @@ h3 {
      font-family: "Yukita Sans";
      font-weight: 700;
      line-height: 40px;
+     padding-top: 15px;
 }
 
 .portfolio .desc p {
@@ -475,7 +482,7 @@ h3 {
      border-radius: 20px;
      grid-area: 1 / 2 / 2 / 3;
      background-color: #F3DE95;
-     padding: 20px;
+     padding: 10px;
      overflow: hidden;
      display: flex;
 }
@@ -484,7 +491,7 @@ h3 {
      border-radius: 20px;
      grid-area: 2 / 2 / 3 / 3;
      background-color: #F395D9;
-     padding: 20px;
+     padding: 10px;
      display: flex;
      overflow: hidden;
 }
@@ -500,7 +507,7 @@ h3 {
 }
 
 .box1 .desc h3 {
-     height: 88px;
+     /* height: 88px; */
      font-size: 20px;
      font-weight: 700;
      font-family: "Yukita Sans";
@@ -733,7 +740,7 @@ h3 {
      display: flex;
      flex-wrap: wrap;
      gap: 1.5rem;
-     padding: 2rem;
+     padding: 1rem;
 }
 
 .footer-container .footer-links {
@@ -787,7 +794,7 @@ h3 {
      display: flex;
      justify-content: center;
      align-items: center;
-     padding: 10px 0;
+     padding: 20px;
 }
 
 .bottom-text .owner {
@@ -833,9 +840,7 @@ h3 {
           display: flex;
      }
 
-     .navbar .logo {
-          justify-content: space-between;
-     }
+
 
      .navbar .navbar-links,
      .navbar-btn {
@@ -856,17 +861,7 @@ h3 {
      }
 
      .navbar .navbar-btn .btnStart {
-          width: 100%;
-          text-align: center;
-          background: none;
-          color: #2C3131;
           margin-top: 2rem;
-     }
-
-     .navbar .navbar-btn .btnStart:hover {
-          border: none;
-          color: #fff;
-          background: var(--skyblue);
      }
 
      .navbar {
