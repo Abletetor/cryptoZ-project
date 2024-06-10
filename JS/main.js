@@ -24,7 +24,7 @@ let currencyToFlag = {};
 const fetchCurrenciesAndFlags = async () => {
      try {
           // currencies API call
-          const currencyResponse = await fetch('https://v6.exchangerate-api.com/v6/a51f48ffd6463910c59ba035/codes');
+          const currencyResponse = await fetch('https://v6.exchangerate-api.com/v6/89a4679a0ac323035520a8aa/codes');
           const currencyData = await currencyResponse.json();
 
           // country currencies flag API call
@@ -37,7 +37,7 @@ const fetchCurrenciesAndFlags = async () => {
                     if (currencies.hasOwnProperty(code)) {
                          // Manual override for common currencies
                          if (code === 'USD') {
-                              currencyToFlag[code] = 'https://flagcdn.com/w320/us.png'; 
+                              currencyToFlag[code] = 'https://flagcdn.com/w320/us.png';
                          } else {
                               currencyToFlag[code] = country.flags.png;
                          }
@@ -45,7 +45,7 @@ const fetchCurrenciesAndFlags = async () => {
                }
           });
 
-          console.log(currencyToFlag); // Inspect the mapping
+          // console.log(currencyToFlag); // Inspect the mapping
           populateCurrencyOptions(currencyData.supported_codes);
      } catch (error) {
           console.error('Error fetching currency or country data:', error);
@@ -82,7 +82,7 @@ const updateFlag = (selectElement, flagElement) => {
 const calculateAndUpdate = async () => {
      const currency_1 = currencyOne.value;
      const currency_2 = currencyTwo.value;
-     const apiURL = `https://v6.exchangerate-api.com/v6/a51f48ffd6463910c59ba035/latest/${currency_1}`;
+     const apiURL = ` https://v6.exchangerate-api.com/v6/89a4679a0ac323035520a8aa/latest/${currency_1}`;
 
      try {
           const response = await fetch(apiURL);

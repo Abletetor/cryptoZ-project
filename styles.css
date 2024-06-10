@@ -149,32 +149,32 @@ header .navbar {
      margin: 5rem 0 2rem 0;
      width: 100%;
      max-width: 100%;
-     padding: 20px;
+     padding: 10px;
 }
 
 .box-container .hero-text {
-     margin: 10px 5px 30px 0;
+     margin: 10px 8px 30px 0;
 }
 
 .hero-text h2 {
      font-family: "Yukita Sans";
-     font-size: 40px;
+     font-size: 30px;
      font-weight: 700;
      padding-bottom: 20px;
      line-height: 50px;
-     max-width: 515px;
+     max-width: 400px;
 }
 
 .hero-text p {
      font-size: 15px;
      line-height: 28px;
      padding-bottom: 20px;
-     max-width: 470px;
+     max-width: 440px;
 }
 
 .box-container .address input {
      font-size: 16px;
-     width: 330px;
+     width: 300px;
      height: 50px;
      border-radius: 10px;
      padding: 10px 20px;
@@ -280,14 +280,6 @@ header .navbar {
      height: 10rem;
 }
 
-.currency-img .cam1 {
-     position: absolute;
-     top: 79%;
-     right: 43%;
-     z-index: 2;
-     height: 10rem;
-}
-
 /* hero section ends */
 
 /* brands start*/
@@ -305,7 +297,7 @@ header .navbar {
 .brands .box img {
      height: 10rem;
      object-fit: cover;
-     padding: 0 4rem;
+     padding: 0 2rem;
 }
 
 /* brands styles ends*/
@@ -366,9 +358,9 @@ header .navbar {
      display: flex;
      align-items: center;
      justify-content: center;
-     flex: 1 1 30rem;
-     flex-wrap: wrap-reverse;
-     gap: 1rem;
+     flex: 1 1 25rem;
+     /* flex-wrap: wrap-reverse; */
+     gap: 2rem;
      padding: 1rem;
      padding-bottom: 0;
 }
@@ -377,7 +369,7 @@ header .navbar {
      max-width: 488px;
      max-height: 180px;
      font-family: "Yukita Sans";
-     font-size: 33px;
+     font-size: 30px;
      font-weight: 700;
      line-height: 45px;
      color: #050E2C;
@@ -421,12 +413,12 @@ h3 {
 
 .benefit .mobile-interface-image {
      background-color: #E8FAFE;
-     padding: 2rem 2rem 0 3rem;
+     padding: 2rem 2rem 0 2rem;
      z-index: -1;
 }
 
 .mobile-interface-image img {
-     height: 550px;
+     height: 500px;
      object-fit: cover;
      overflow: hidden;
 }
@@ -685,7 +677,7 @@ h3 {
 
 .first-step-banner .bannerText p {
      font-family: "Yukita Sans";
-     font-size: 35px;
+     font-size: 30px;
      font-weight: 900;
      line-height: 45px;
      color: #fff;
@@ -739,8 +731,7 @@ h3 {
 .footer .footer-container {
      display: flex;
      flex-wrap: wrap;
-     gap: 1.5rem;
-     padding: 1rem;
+     gap: .1rem;
 }
 
 .footer-container .footer-links {
@@ -973,6 +964,10 @@ h3 {
           padding-left: 0;
      }
 
+     .benefit .benefit-container {
+          flex-wrap: wrap-reverse;
+     }
+
      /* features  */
      .features {
           grid-template-columns: 1fr;
@@ -1063,6 +1058,8 @@ h3 {
      .currency input {
           text-align: left;
      }
+
+
 
      .features {
           padding: 20px;
