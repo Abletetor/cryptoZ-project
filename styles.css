@@ -831,8 +831,6 @@ h3 {
           display: flex;
      }
 
-
-
      .navbar .navbar-links,
      .navbar-btn {
           display: none;
@@ -964,9 +962,7 @@ h3 {
           padding-left: 0;
      }
 
-     .benefit .benefit-container {
-          flex-wrap: wrap-reverse;
-     }
+
 
      /* features  */
      .features {
@@ -1059,7 +1055,9 @@ h3 {
           text-align: left;
      }
 
-
+     .benefit .benefit-container {
+          flex-wrap: wrap-reverse;
+     }
 
      .features {
           padding: 20px;
